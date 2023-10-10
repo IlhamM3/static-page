@@ -199,7 +199,7 @@ top: -60px;
 }
 
 @media screen and (max-width: 500px) {
-    body{
-        margin:
+    blockquote{
+        padding: 15px 10px 10px 15px;
     }
 }
