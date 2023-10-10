@@ -1,8 +1,7 @@
 <html>
-  <meta charset="UTF-8" /><meta
-    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
-    name="viewport"
-  /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <link rel="preconnect" href="https://fonts.googleapis.com" /><link
     rel="preconnect"
     href="https://fonts.gstatic.com"
@@ -13,32 +12,14 @@
   />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
   <link
-    href="https://hanyauntukmu.likeadream.repl.co/style.css"
+    href="../public/index.css"
     rel="stylesheet"
     type="text/css"
   />
-  <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
+  <script src="./index.js"></script>
   <head> 
-    <title> Hello :D</title>
+    <title>U can do it</title>
   </head>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden; /* Menghilangkan scroll bar */
-    }
-    video {
-        position: fixed;
-        top: 0;
-        left: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1; /* Membawa video ke belakang elemen-elemen lainnya */
-    }
-    body::before {
-      content: "" !important;
-      color: transparent !important;
-    }
-  </style>
   <body>
     <video autoplay loop muted>
       <source src="./asset/video.mp4" type="video/mp4">
@@ -65,7 +46,7 @@
         var audio = new Audio(
           "./asset/bg.mp3"
         )
-        audio.volume=0.7;
+        audio.volume=0.8;
         audio.play()
       }
 
@@ -80,17 +61,17 @@
       const swalst = Swal.mixin({
         allowOutsideClick: false,
         showConfirmButton: false,
-        timer: 5000,
+        timer: 6000,
         timerProgressBar: true,
       })
 
       async function mulaitanya() {
         var { isConfirmed: tanyawal } = await swals.fire({
-          title: `Halo :D kamu bisa klik tombol dibawah ya`,
+          title: `Hallo kak :D kamu bisa klik tombol dibawah ya`,
           imageUrl: "https://media.tenor.com/d6gBTrSW9RoAAAAC/mochi-mochi-peach-cat.gif",
           imageWidth: 170,
           imageHeight: 140,
-          confirmButtonText: "Okay",
+          confirmButtonText: "Let's Gowww",
           allowOutsideClick: false,
           showCancelButton: false,
         })
@@ -108,7 +89,7 @@
           imageHeight: 140,
         })
         await swalst.fire({
-          title: "Its okay, i trust u, u can do it. Selamat sudah bisa melewati lewati semua hal hari ini",
+          title: "Its okay, i trust u, u can do it. Selamat sudah bisa melewati semua hal yang terjadi pada hari ini",
           imageUrl: "https://media.tenor.com/dZOojONCQigAAAAC/milk-and-mocha-bears-its-ok.gif",
           imageWidth: 170,
           imageHeight: 140,
@@ -132,14 +113,14 @@
           imageHeight: 160,
         })
         await swalst.fire({
-          title: "Maaf aku belum bisa membantu apa apa hanya bisa menggangu kesibukan kamu &#129402;",
+          title: "Maaf aku belum bisa membantu apa apa, aku hanya bisa menjadi benalu for u &#129402; 🙏🙏🙏",
           imageUrl: "https://media.tenor.com/086fwqOLwzkAAAAi/mochi-peach.gif",
           imageWidth: 170,
           imageHeight: 140,
         })
-        text = "You are the best woman I have ever met"
+        text = "You are the best woman I have ever met after my mother and grandmother"
         emotnama = "&#128522;"
-        text2 = "Jaga diri baik-baik... Semoga bisa mendapatkan pendamping hibup yang selalu support dan mennyayangi kamu dan kedua orang tua kamu. Semangat terus 🔥"
+        text2 = "Jaga diri baik-baik... Semoga bisa mendapatkan pendamping hibup yang selalu support dan mennyayangi kamu dan kedua orang tua kamu. Semangat terus 🔥 , Semangat mengejar impian dan hiraukan ucapan orang, gapailah cita cita mu, bahagiakan selalu kedua orang tuamu. Semoga nanti bisa dipertemukan kembali, thank you for taking care of me"
         showDiv()
       }
       mulaitanya()
