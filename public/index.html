@@ -23,10 +23,16 @@
   </head>
   <style>
     body {
-      background-image: url(https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position-y: bottom;
+      margin: 0;
+      overflow: hidden; /* Menghilangkan scroll bar */
+    }
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1; /* Membawa video ke belakang elemen-elemen lainnya */
     }
     body::before {
       content: "" !important;
@@ -34,20 +40,16 @@
     }
   </style>
   <body>
-    <div id="bodyblur">
-      <!-- <img
-        src="https://i.postimg.cc/NMLZ6Zk5/IMG-20220207-131156-010.jpg"
-        width="100%"
-        height="100%"
-      /> -->
-    </div>
+    <video autoplay loop muted>
+      <source src="./video.mp4" type="video/mp4">
+    </video>
 
     <div id="Content">
       <div class="image">
         <img
-          src="https://i.postimg.cc/W4xjf6yM/peachcat-peachcat-and-goma.gif"
-          width="130px"
-          height="130px"
+          src="https://media.tenor.com/d6gBTrSW9RoAAAAC/mochi-mochi-peach-cat.gif"
+          width="180px"
+          height="170px"
         />
       </div>
       <div>
@@ -61,7 +63,7 @@
     <script type="text/javascript">
       function play() {
         var audio = new Audio(
-          "https://sndup.net/tqdx/d"
+          "./bg.mp3"
         )
         audio.play()
       }
@@ -84,9 +86,9 @@
       async function mulaitanya() {
         var { isConfirmed: tanyawal } = await swals.fire({
           title: `Halo :D kamu bisa klik tombol dibawah ya`,
-          imageUrl: "https://i.postimg.cc/0j2LDLxP/heart-happy.gif",
-          imageWidth: 120,
-          imageHeight: 120,
+          imageUrl: "https://media.tenor.com/d6gBTrSW9RoAAAAC/mochi-mochi-peach-cat.gif",
+          imageWidth: 170,
+          imageHeight: 140,
           confirmButtonText: "Okay",
           allowOutsideClick: false,
           showCancelButton: false,
@@ -99,32 +101,44 @@
 
       async function kuis() {
         await swalst.fire({
-          title: "Lelah ya hari ini? :(",
-          imageUrl: "https://i.postimg.cc/02wF21b1/peach-goma.gif",
-          imageWidth: 120,
-          imageHeight: 120,
+          title: "Lelah yah hari ini ? :(",
+          imageUrl: "https://media.tenor.com/Eku7h-01fE4AAAAi/mochi-cat-sleepy.gif",
+          imageWidth: 150,
+          imageHeight: 140,
         })
         await swalst.fire({
-          title: "Its okay, selamat ya udah bisa lewatin semua hal dihari ini",
-          imageUrl: "https://i.postimg.cc/g06FWScx/tepukbadan.gif",
-          imageWidth: 120,
-          imageHeight: 120,
+          title: "Its okay, i trust u, u can do it. Selamat sudah bisa melewati lewati semua hal hari ini",
+          imageUrl: "https://media.tenor.com/dZOojONCQigAAAAC/milk-and-mocha-bears-its-ok.gif",
+          imageWidth: 170,
+          imageHeight: 140,
         })
         await swalst.fire({
           title: "Jangan lupa minum ..",
-          imageUrl: "https://i.postimg.cc/vZWmnK2p/gigit.gif",
-          imageWidth: 120,
-          imageHeight: 120,
+          imageUrl: "https://media.tenor.com/8V2NzA_CLTgAAAAC/aesthetic-panda-drinking-boba-tea-panda.gif",
+          imageWidth: 150,
+          imageHeight: 140,
         })
         await swalst.fire({
-          title: "Maaf aku hanya bisa support kamu aja &#129402;",
-          imageUrl: "https://i.postimg.cc/SsmkcNY9/bear-cute-1.gif",
-          imageWidth: 120,
-          imageHeight: 120,
+          title: "Jangan lupa makan ..",
+          imageUrl: "https://media.tenor.com/tCXH_96HjS8AAAAi/mochi-cat-noodles.gif",
+          imageWidth: 170,
+          imageHeight: 140,
         })
-        text = "You always be my sweetheart "
-        emotnama = "&#10084;"
-        text2 = "Jaga diri baik-baik... Jangan sedih, kita ketemu nanti :) "
+        await swalst.fire({
+          title: "Istirahat yah kalau capek ..",
+          imageUrl: "https://media.tenor.com/q0GI3etz-30AAAAd/mochi-cat.gif",
+          imageWidth: 170,
+          imageHeight: 160,
+        })
+        await swalst.fire({
+          title: "Maaf aku belum bisa membantu apa apa hanya bisa menggangu kesibukan kamu &#129402;",
+          imageUrl: "https://media.tenor.com/086fwqOLwzkAAAAi/mochi-peach.gif",
+          imageWidth: 170,
+          imageHeight: 140,
+        })
+        text = "You are the best woman I have ever met"
+        emotnama = "&#128522;"
+        text2 = "Jaga diri baik-baik... Semoga bisa mendapatkan pendamping hibup yang selalu support dan mennyayangi kamu dan kedua orang tua kamu. Semangat terus 🔥"
         showDiv()
       }
       mulaitanya()
