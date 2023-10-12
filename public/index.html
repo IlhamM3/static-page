@@ -18,15 +18,27 @@
     type="text/css"
   />
   <script src="https://hanyauntukmu.likeadream.repl.co/script.js"></script>
-  <link
-    href="../public/index.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-  <script src="./index.js"></script>
   <head> 
-    <title>U can do it</title>
+    <title> Hello :D</title>
   </head>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden; /* Menghilangkan scroll bar */
+    }
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1; /* Membawa video ke belakang elemen-elemen lainnya */
+    }
+    body::before {
+      content: "" !important;
+      color: transparent !important;
+    }
+  </style>
   <body>
     <video autoplay loop muted>
       <source src="./asset/video.mp4" type="video/mp4">
